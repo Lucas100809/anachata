@@ -4,85 +4,358 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f6f8;
     color: #333;
 }
 
+
+/* CABEÇALHO */
+
 header {
-    background-color: #222;
+    background-color: #1f2937;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 35px 20px 20px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #d1d5db;
 }
 
 nav {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 10px;
+    margin: 0 12px;
+    font-size: 14px;
 }
 
+nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* CONTEÚDO */
+
 main {
-    width: 80%;
+    max-width: 1100px;
     margin: auto;
 }
 
 section {
-    margin-top: 30px;
-    padding: 25px;
-    background-color: white;
+    padding: 60px 30px;
 }
 
-h2 {
-    margin-bottom: 20px;
-}
 
-h3 {
-    margin-bottom: 10px;
-}
-
-p {
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
+/* INÍCIO */
 
 .inicio {
     text-align: center;
+    background: white;
+    margin: 30px 0;
+    border-radius: 10px;
 }
 
-.card {
-    background-color: #f0f0f0;
-    padding: 20px;
+.inicio h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.inicio a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+
+    background-color: #2563eb;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+
+/* TÍTULOS */
+
+.titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.titulo h2 {
+    font-size: 30px;
+    margin: 8px 0;
+}
+
+.titulo p {
+    color: #666;
+}
+
+
+/* PESQUISA */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+article {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+article:hover {
+    transform: translateY(-3px);
+}
+
+.icone {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+article h3 {
+    margin-bottom: 10px;
+}
+
+article p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #555;
+}
+
+.exemplo {
     margin-top: 15px;
-    border-left: 5px solid #333;
+    background-color: #f1f5f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* CASOS DE TESTE */
+
+.fundo {
+    background-color: #eaf0f6;
+    border-radius: 10px;
+}
+
+.funcionalidades {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.funcao {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.funcao h3 {
+    margin-bottom: 10px;
+}
+
+.testes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.teste {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.teste span {
+    display: inline-block;
+
+    background-color: #2563eb;
+    color: white;
+
+    padding: 6px 10px;
+    border-radius: 5px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.teste h3 {
+    margin-bottom: 10px;
+}
+
+.teste p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+
+/* RESULTADOS */
+
+.tabela {
+    overflow-x: auto;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #1f2937;
+    color: white;
 }
 
 th,
 td {
-    border: 1px solid #ccc;
-    padding: 12px;
+    padding: 15px;
     text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
-th {
-    background-color: #222;
-    color: white;
+.aprovado {
+    color: #15803d;
+    font-weight: bold;
 }
+
+
+/* CONCLUSÃO */
+
+.conclusao {
+    background-color: #f1f5f9;
+}
+
+.conclusao-caixa {
+    max-width: 700px;
+    margin: auto;
+
+    background-color: white;
+    padding: 40px;
+
+    text-align: center;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.resultado {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 15px;
+
+    background-color: #22c55e;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.conclusao-caixa h3 {
+    margin-bottom: 15px;
+}
+
+.conclusao-caixa p {
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.conclusao-caixa hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+
+/* RODAPÉ */
 
 footer {
-    background-color: #222;
+    background-color: #1f2937;
     color: white;
+
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+    padding: 30px;
+}
+
+footer p {
+    margin-top: 8px;
+    color: #d1d5db;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .funcionalidades {
+        flex-direction: column;
+    }
+
+    .testes {
+        grid-template-columns: 1fr;
+    }
+
+    .inicio h2 {
+        font-size: 26px;
+    }
+
 }
