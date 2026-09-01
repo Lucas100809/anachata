@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Testes de Software</title>
 
     <link rel="stylesheet" href="style.css">
@@ -10,8 +11,10 @@
 
 <body>
 
+    <!-- CABEÇALHO -->
     <header>
         <h1>🧪 Testes de Software</h1>
+        <p>Pesquisa e execução de testes</p>
 
         <nav>
             <a href="#pesquisa">Pesquisa</a>
@@ -21,202 +24,335 @@
         </nav>
     </header>
 
+
     <main>
 
+        <!-- APRESENTAÇÃO -->
         <section class="inicio">
             <h2>Pesquisa e Testes de Software</h2>
+
             <p>
-                Trabalho sobre testes de software realizado utilizando
-                o site Savana como aplicação para os testes.
+                Este site apresenta uma pesquisa sobre os principais
+                tipos de testes de software e os resultados dos testes
+                realizados no site Savana.
             </p>
+
+            <a href="#pesquisa">Começar a pesquisa ↓</a>
         </section>
 
 
+        <!-- PESQUISA -->
         <section id="pesquisa">
 
-            <h2>Parte 1 - Pesquisa</h2>
-
-            <div class="card">
-                <h3>Testes de Software</h3>
-                <p>
-                    São processos utilizados para verificar se um site
-                    ou aplicativo está funcionando corretamente antes
-                    de ser utilizado pelos usuários.
-                </p>
+            <div class="titulo">
+                <span>PARTE 1</span>
+                <h2>Pesquisa</h2>
+                <p>Conheça alguns dos principais testes de software.</p>
             </div>
 
-            <div class="card">
-                <h3>Testes Funcionais</h3>
-                <p>
-                    Verificam se as funcionalidades do sistema estão
-                    funcionando conforme o esperado.
-                </p>
-                <p><b>Exemplo:</b> testar se o botão de login funciona.</p>
-            </div>
 
-            <div class="card">
-                <h3>Testes de Regressão</h3>
-                <p>
-                    Verificam se alterações feitas no software não
-                    causaram problemas em funcionalidades que já funcionavam.
-                </p>
-                <p><b>Exemplo:</b> modificar o cadastro e testar novamente o login.</p>
-            </div>
+            <div class="cards">
 
-            <div class="card">
-                <h3>Testes Unitários</h3>
-                <p>
-                    Testam pequenas partes do sistema separadamente.
-                </p>
-                <p><b>Exemplo:</b> testar uma função que verifica a senha.</p>
-            </div>
+                <article>
+                    <div class="icone">💻</div>
 
-            <div class="card">
-                <h3>Testes de Integração</h3>
-                <p>
-                    Verificam se diferentes partes do sistema funcionam
-                    corretamente juntas.
-                </p>
-                <p>
-                    <b>Exemplo:</b> verificar se um formulário envia
-                    dados corretamente para o banco de dados.
-                </p>
-            </div>
+                    <h3>Testes de Software</h3>
 
-            <div class="card">
-                <h3>Teste Caixa-Preta</h3>
-                <p>
-                    O sistema é testado sem analisar o código interno.
-                </p>
-                <p>
-                    <b>Exemplo:</b> digitar uma senha errada e verificar
-                    se aparece uma mensagem de erro.
-                </p>
-            </div>
+                    <p>
+                        São processos utilizados para verificar se um
+                        sistema está funcionando corretamente antes de
+                        ser utilizado pelos usuários.
+                    </p>
 
-            <div class="card">
-                <h3>Teste Caixa-Branca</h3>
-                <p>
-                    O teste é realizado analisando a estrutura interna
-                    e o código do sistema.
-                </p>
-                <p>
-                    <b>Exemplo:</b> verificar se todas as condições de
-                    uma função foram executadas corretamente.
-                </p>
+                    <p class="exemplo">
+                        <strong>Exemplo:</strong> testar se um site funciona corretamente.
+                    </p>
+                </article>
+
+
+                <article>
+                    <div class="icone">⚙️</div>
+
+                    <h3>Testes Funcionais</h3>
+
+                    <p>
+                        Verificam se as funcionalidades do sistema
+                        funcionam conforme os requisitos.
+                    </p>
+
+                    <p class="exemplo">
+                        <strong>Exemplo:</strong> testar se o botão de login funciona.
+                    </p>
+                </article>
+
+
+                <article>
+                    <div class="icone">🔄</div>
+
+                    <h3>Testes de Regressão</h3>
+
+                    <p>
+                        Verificam se mudanças feitas no sistema não
+                        causaram problemas em funcionalidades que já
+                        funcionavam corretamente.
+                    </p>
+
+                    <p class="exemplo">
+                        <strong>Exemplo:</strong> modificar o cadastro e testar novamente o login.
+                    </p>
+                </article>
+
+
+                <article>
+                    <div class="icone">🧩</div>
+
+                    <h3>Testes Unitários</h3>
+
+                    <p>
+                        Testam pequenas partes do sistema de forma
+                        isolada, como funções ou componentes.
+                    </p>
+
+                    <p class="exemplo">
+                        <strong>Exemplo:</strong> testar uma função que verifica a senha.
+                    </p>
+                </article>
+
+
+                <article>
+                    <div class="icone">🔗</div>
+
+                    <h3>Testes de Integração</h3>
+
+                    <p>
+                        Verificam se diferentes partes de uma aplicação
+                        conseguem funcionar corretamente juntas.
+                    </p>
+
+                    <p class="exemplo">
+                        <strong>Exemplo:</strong> testar se um formulário envia dados corretamente.
+                    </p>
+                </article>
+
+
+                <article>
+                    <div class="icone">⬛</div>
+
+                    <h3>Teste Caixa-Preta</h3>
+
+                    <p>
+                        O sistema é testado sem analisar o código interno,
+                        verificando apenas os resultados.
+                    </p>
+
+                    <p class="exemplo">
+                        <strong>Exemplo:</strong> digitar uma senha errada e verificar a mensagem.
+                    </p>
+                </article>
+
+
+                <article>
+                    <div class="icone">⬜</div>
+
+                    <h3>Teste Caixa-Branca</h3>
+
+                    <p>
+                        O teste é realizado analisando a estrutura
+                        interna e os caminhos do código.
+                    </p>
+
+                    <p class="exemplo">
+                        <strong>Exemplo:</strong> verificar as condições de uma função.
+                    </p>
+                </article>
+
             </div>
 
         </section>
 
 
-        <section id="casos">
+        <!-- CASOS DE TESTE -->
+        <section id="casos" class="fundo">
 
-            <h2>Parte 2 - Casos de Teste</h2>
+            <div class="titulo">
+                <span>PARTE 2</span>
+                <h2>Casos de Teste</h2>
 
-            <p>
-                A aplicação escolhida foi o site <b>Savana</b>.
-                As funcionalidades testadas foram os links dos projetos
-                no GitHub e o download do currículo.
-            </p>
-
-            <div class="card">
-                <h3>CT01 - Acesso ao GitHub</h3>
-                <p><b>Teste:</b> clicar no botão de um projeto.</p>
                 <p>
-                    <b>Resultado esperado:</b> o usuário deve ser
-                    direcionado para o repositório no GitHub.
+                    Aplicação escolhida: <strong>Site Savana</strong>
                 </p>
             </div>
 
-            <div class="card">
-                <h3>CT02 - Links dos Projetos</h3>
-                <p><b>Teste:</b> verificar os links dos projetos.</p>
-                <p>
-                    <b>Resultado esperado:</b> todos os links devem
-                    funcionar corretamente.
-                </p>
+
+            <div class="funcionalidades">
+
+                <div class="funcao">
+                    <h3>🔗 Projetos no GitHub</h3>
+                    <p>
+                        Foram realizados testes nos links dos projetos
+                        disponíveis no site.
+                    </p>
+                </div>
+
+                <div class="funcao">
+                    <h3>📄 Download do Currículo</h3>
+                    <p>
+                        Foram realizados testes no download e na abertura
+                        do currículo.
+                    </p>
+                </div>
+
             </div>
 
-            <div class="card">
-                <h3>CT03 - Download do Currículo</h3>
-                <p><b>Teste:</b> clicar no botão para baixar o currículo.</p>
-                <p>
-                    <b>Resultado esperado:</b> o currículo deve ser
-                    baixado corretamente.
-                </p>
-            </div>
 
-            <div class="card">
-                <h3>CT04 - Abertura do Currículo</h3>
-                <p><b>Teste:</b> abrir o currículo após o download.</p>
-                <p>
-                    <b>Resultado esperado:</b> o arquivo deve abrir
-                    normalmente.
-                </p>
+            <div class="testes">
+
+                <div class="teste">
+                    <span>CT01</span>
+                    <h3>Acesso ao GitHub</h3>
+
+                    <p>
+                        Verificar se o usuário é direcionado corretamente
+                        para o repositório do projeto.
+                    </p>
+
+                    <strong>Resultado esperado:</strong>
+                    <p>O repositório correto deve ser aberto.</p>
+                </div>
+
+
+                <div class="teste">
+                    <span>CT02</span>
+                    <h3>Links dos Projetos</h3>
+
+                    <p>
+                        Verificar se os links dos projetos estão funcionando.
+                    </p>
+
+                    <strong>Resultado esperado:</strong>
+                    <p>Todos os links devem funcionar corretamente.</p>
+                </div>
+
+
+                <div class="teste">
+                    <span>CT03</span>
+                    <h3>Download do Currículo</h3>
+
+                    <p>
+                        Verificar se o currículo é baixado ao clicar no botão.
+                    </p>
+
+                    <strong>Resultado esperado:</strong>
+                    <p>O download deve ser realizado corretamente.</p>
+                </div>
+
+
+                <div class="teste">
+                    <span>CT04</span>
+                    <h3>Abertura do Currículo</h3>
+
+                    <p>
+                        Verificar se o arquivo baixado pode ser aberto.
+                    </p>
+
+                    <strong>Resultado esperado:</strong>
+                    <p>O currículo deve abrir normalmente.</p>
+                </div>
+
             </div>
 
         </section>
 
 
+        <!-- RESULTADOS -->
         <section id="resultados">
 
-            <h2>Parte 3 - Resultados dos Testes</h2>
+            <div class="titulo">
+                <span>PARTE 3</span>
+                <h2>Resultados dos Testes</h2>
 
-            <table>
+                <p>
+                    Todos os testes realizados apresentaram o resultado esperado.
+                </p>
+            </div>
 
-                <tr>
-                    <th>Teste</th>
-                    <th>Resultado Obtido</th>
-                    <th>Status</th>
-                </tr>
 
-                <tr>
-                    <td>CT01</td>
-                    <td>O GitHub abriu corretamente.</td>
-                    <td>✅ Aprovado</td>
-                </tr>
+            <div class="tabela">
 
-                <tr>
-                    <td>CT02</td>
-                    <td>Todos os links funcionaram corretamente.</td>
-                    <td>✅ Aprovado</td>
-                </tr>
+                <table>
 
-                <tr>
-                    <td>CT03</td>
-                    <td>O currículo foi baixado corretamente.</td>
-                    <td>✅ Aprovado</td>
-                </tr>
+                    <tr>
+                        <th>Teste</th>
+                        <th>Resultado Obtido</th>
+                        <th>Status</th>
+                    </tr>
 
-                <tr>
-                    <td>CT04</td>
-                    <td>O currículo abriu normalmente.</td>
-                    <td>✅ Aprovado</td>
-                </tr>
+                    <tr>
+                        <td>CT01</td>
+                        <td>O usuário foi direcionado corretamente ao GitHub.</td>
+                        <td class="aprovado">✓ Aprovado</td>
+                    </tr>
 
-            </table>
+                    <tr>
+                        <td>CT02</td>
+                        <td>Todos os links dos projetos funcionaram corretamente.</td>
+                        <td class="aprovado">✓ Aprovado</td>
+                    </tr>
+
+                    <tr>
+                        <td>CT03</td>
+                        <td>O currículo foi baixado corretamente.</td>
+                        <td class="aprovado">✓ Aprovado</td>
+                    </tr>
+
+                    <tr>
+                        <td>CT04</td>
+                        <td>O currículo abriu normalmente.</td>
+                        <td class="aprovado">✓ Aprovado</td>
+                    </tr>
+
+                </table>
+
+            </div>
 
         </section>
 
 
-        <section id="conclusao">
+        <!-- CONCLUSÃO -->
+        <section id="conclusao" class="conclusao">
 
-            <h2>Problemas Encontrados</h2>
+            <div class="titulo">
+                <span>RESULTADO FINAL</span>
+                <h2>Conclusão</h2>
+            </div>
 
-            <p>
-                Não foram encontrados problemas durante os testes.
-                Todos os casos apresentaram os resultados esperados.
-            </p>
+            <div class="conclusao-caixa">
 
+                <div class="resultado">✓</div>
 
-            <h2>Conclusão</h2>
+                <h3>Aplicação aprovada!</h3>
 
-            <p>
-                Após realizar os testes, consideramos que a aplicação
-                está funcionando corretamente. Todos os quatro testes
-                realizados foram aprovados e apresentaram os resultados
-                esperados.
-            </p>
+                <p>
+                    Após a realização dos testes, consideramos que o site
+                    Savana está funcionando corretamente nas funcionalidades
+                    que foram analisadas.
+                </p>
+
+                <p>
+                    Todos os quatro casos de teste foram aprovados e
+                    apresentaram os resultados esperados.
+                </p>
+
+                <hr>
+
+                <h3>Problemas Encontrados</h3>
+
+                <p>
+                    Durante a execução dos testes, não foram encontrados
+                    problemas nas funcionalidades analisadas.
+                </p>
+
+            </div>
 
         </section>
 
@@ -224,7 +360,15 @@
 
 
     <footer>
-        <p>Trabalho de Testes de Software - 2026</p>
+
+        <h3>🧪 Testes de Software</h3>
+
+        <p>
+            Trabalho desenvolvido para a disciplina de Desenvolvimento de Sistemas.
+        </p>
+
+        <p>2026</p>
+
     </footer>
 
 </body>
